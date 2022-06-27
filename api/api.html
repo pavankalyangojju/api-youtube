@@ -57,7 +57,7 @@
             let userInput = document.getElementById("searchTerm").value
 
             let res = await fetch(
-                `https://youtube.googleapis.com/youtube/v3/search?key=${API_KEY}&q=${userInput}&type=video&maxResults=25`
+                `https://youtube.googleapis.com/youtube/v3/search?key=${API_KEY}&q=${userInput}&type=video&maxResults=25&part=snippet`
             );
 
             //let data = await res.json();
